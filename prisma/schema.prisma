@@ -13,5 +13,5 @@ model Referral {
   referrerEmail String
   refereeName   String
   refereeEmail  String
-  createdAt     String @default("CURRENT_TIMESTAMP") @map("_createdAt")
+  createdAt     DateTime @default(now())
 }
